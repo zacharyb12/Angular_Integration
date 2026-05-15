@@ -1,1 +1,31 @@
-<p>register works!</p>
+<h1>S'enregistrer</h1>
+
+
+@if(errorMessage())
+{
+    {{errorMessage()}}
+}
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="card w-50 m-auto p-2">
+
+    <div>
+        <label>Username</label>
+        <br>
+        <input type="text" formControlName="userName"/>
+    </div>
+
+        <div>
+        <label>Email</label>
+        <br>
+        <input type="text" formControlName="email"/>
+    </div>
+
+        <div>
+        <label>Password</label>
+        <br>
+        <input type="text" formControlName="password"/>
+    </div>
+
+
+    <button type="submit"> Créer un compte</button>
+</form>

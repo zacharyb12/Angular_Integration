@@ -1,0 +1,26 @@
+<p>add-product works!</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+<div>
+    <label>Name</label>
+    <input formControlName="name"/>
+</div>
+
+<div>
+    <label>Description</label>
+    <input formControlName="description"/>
+</div>
+
+<div>
+    <label>Price</label>
+    <input type="number" formControlName="price"/>
+</div>
+
+<div>
+    <label>Stock</label>
+    <input type="number" formControlName="stock"/>
+</div>
+
+<button type="submit">Ajout</button>
+</form>

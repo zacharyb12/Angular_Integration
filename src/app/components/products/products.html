@@ -1,1 +1,13 @@
-<p>products works!</p>
+<h1>Produits</h1>
+
+<a routerLink="/add-product">New Product</a>
+
+@for(p of products(); track $index) {
+
+    <div>
+        <h3>{{p.name}}</h3>
+        <p>{{p.description}}</p>
+        <p>{{p.price}}€</p>
+        <p>{{p.stock}} - {{p.userId}}</p>
+    </div>
+}
