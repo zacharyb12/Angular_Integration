@@ -4,10 +4,12 @@
     {{errorMessage()}}
 }
 
-<form [formGroup]="form" (ngSubmit)="onSubmit()" class="card w-25">
 
-    <div class="m-auto p-2">
-        <label>Email</label>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="login">
+        
+        <div class="">
+            <label>Email</label>
         <br/>
         <input formControlName="email"/>
     </div>
@@ -17,6 +19,10 @@
         <br/>
         <input formControlName="password"/>
     </div>
+    
+    <div class="d-flex justify-between ">
+        <button class="btn btn-green" type="submit" [disabled]="form.invalid">Login</button>
+        <a class="btn btn-blue" (click)="emitValue()" routerLink="register">S'enregistrer</a>
+    </div>
 
-    <button type="submit" [disabled]="form.invalid">Login</button>
 </form>

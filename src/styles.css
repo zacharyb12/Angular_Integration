@@ -3,6 +3,12 @@
 @import 'tailwindcss';
 
 
+*{
+    /* border: 1px solid red; */
+    
+}
+
+/* Card style*/
 .card-75{
     width:75% ;
     margin: auto;
@@ -22,6 +28,88 @@
     box-shadow: 5px 5px 5px black;
 }
 
+/* Width style*/
 .w-25{
     width: 25%;
+}
+
+/* Width style*/
+.p-2{
+    padding: 2rem;
+}
+/* Width style*/
+.my-3{
+    margin: 3rem auto;
+}
+
+
+/* Display style*/
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-center{
+    justify-content: center;
+}
+    /* position style*/
+
+.login{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    background-color: rgb(144, 143, 143);
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+
+    width : 30%;
+    height: 25%;
+
+    input{
+        background-color: white;
+        margin: auto;
+    }
+
+    label{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+
+
+    .btn-green{
+        background-color: rgba(60, 167, 60, 0.661) !important;
+        font-weight: bold;
+        color: white;
+    }
+
+        .btn-blue{
+        background-color: rgba(60, 121, 167, 0.661) !important;
+        font-weight: bold;
+        color: white;
+    }
+
+}
+
+.btn{
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px solid black;
+    border-radius: 8px;
+    padding: 0.3rem;
+}
+
+.btn-red{
+background-color: rgba(171, 43, 43, 0.661) !important;
+font-weight: bold;
+color: white;
 }

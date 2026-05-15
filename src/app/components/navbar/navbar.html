@@ -1,13 +1,28 @@
-<nav class="card">
-    <ul>
+<nav class="card p-2">
+    <ul class="d-flex justify-between">
+      <div class="d-flex justify-evenly w-75">
         <li><a routerLink="">Home</a></li>
-        @if(!auth.currentUser())
-        {
-            <app-login></app-login>
-        }
-        @else
-        {
-            <button (click)="logout()">Logout</button>
-        }
+        <li><a routerLink="products">Products</a></li>
+      </div>
+      <div class=" d-flex w-25 justify-center">
+
+          @if(!auth.currentUser())
+          {
+
+            @if(isOpen())
+            {
+              <app-login (emit)="toggleForm()"></app-login>
+            }
+            @else 
+            {
+              <button (click)="toggleForm()">Login</button>
+            }
+          }
+          @else
+          {
+            <button class="btn btn-red" (click)="logout()">Logout</button>
+          }
+      </div>
     </ul>
 </nav>
+
