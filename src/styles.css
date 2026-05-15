@@ -1,3 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+
+.card-75{
+    width:75% ;
+    margin: auto;
+    border: 0.5px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.card-50{
+    width:50% ;
+    margin: auto;
+    border: 0.5px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.card{
+    border: 0.5px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.w-25{
+    width: 25%;
+}
